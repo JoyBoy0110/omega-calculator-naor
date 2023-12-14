@@ -1,16 +1,38 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+def menu():
+    print("\n")
+    print("          calculator")
+    print("-------------------------------")
+    print("\n")
+    num1 = input("num1:                ")
+    print("actions: 1.   add   2.  sub    3. mul ")
+    print("         4.   div   5.  pow    6. end ")
+    action = input("input")
+    if(int(action) == 1):
+        operator = '+'
+    if(int(action) == 2):
+        operator = '-'
+    if (int(action) == 3):
+        operator = '*'
+    if (int(action) == 4):
+        operator = '/'
+    if (int(action) == 5):
+        operator = '^'
+    if(int(action) == 6):
+        return
+    print("\n")
+    print(num1+operator)
+    num2 = input("num2:                ")
+    print("\n")
+    print(num1+operator+num2)
+    if (int(action) == 1):
+        sumN(num1, num2)
+    if (int(action) == 2):
+        sumN(num1, num2)
+    if (int(action) == 3):
+        sumN(num1, num2)
+    if (int(action) == 4):
+        operator = '/'
+    if (int(action) == 5):
+        operator = '^'
+    if (int(action) == 6):
+        return
