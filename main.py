@@ -25,14 +25,24 @@ def menu():
     print("\n")
     print(num1+operator+num2)
     if (int(action) == 1):
-        sumN(num1, num2)
+        sumNums(num1, num2)
     if (int(action) == 2):
-        sumN(num1, num2)
+        subNums(num1, num2)
     if (int(action) == 3):
-        sumN(num1, num2)
+        mulNums(num1, num2)
     if (int(action) == 4):
-        operator = '/'
+        divNums(num1, num2)
     if (int(action) == 5):
-        operator = '^'
+        toPowerNums(num1, num2)
     if (int(action) == 6):
         return
+def sumNums(num1, num2):
+    return (num1 + num2)
+def subNums(num1, num2):
+    return (num1 - num2)
+def mulNums(num1, num2):
+    return (num1 * num2)
+def divNums(num1, num2):
+    return (num1 / num2)
+def toPowerNums(num1, num2):
+    return (num1 ** num2)
